@@ -1,5 +1,5 @@
 function App() {
-  return <>Todoist Clone</>;
+  return <div className="bg-red-500">Todoist</div>;
 }
 
 export default App;
