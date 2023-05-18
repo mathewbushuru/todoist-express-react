@@ -8,6 +8,10 @@ app.get("/", (req, res, next) => {
   res.send("Hello World");
 });
 
+app.post("/", (req, res, next) => {
+  res.send("Got a post request!!");
+});
+
 app.listen(PORT, () => {
   console.log(`Todoist Server listening on port ${PORT}`);
 });
