@@ -16,4 +16,4 @@ Backend
 - JavaScript
 
 #####  Features
-- [ ] Mobile responsive - mobile first design
+- [ ] Fully responsive
