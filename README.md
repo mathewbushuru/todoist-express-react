@@ -1,19 +1,35 @@
-### Todoist clone
+### An over-engineered to-do list app
 
-##### Technologies used
+ For this project, I aim to create a complete working example of a production-ready full-stack application. The app is a basic to-do list CRUD application that should have the following features:
 
-Frontend
+ - Allow users to register and log in
+ - Authenticated users can add, complete, uncomplete, modify, and delete tasks
+ - Users can drag tasks to rearrange them
+ - Users can add due dates to tasks
+ - Users can schedule email reminders
+ - Users can choose the priority for each task
+ - Users can break tasks into subtasks
+ - Users can set up projects with multiple tasks
+ - Users can invite multiple team members to projects
+ - Multiple team members can have discussion in task's comments
+ - Projects can be shareable
+ - Allow integration to other project management tools
 
-- React
-- TypeScript
-- TailwindCSS
-- Vite
-- React Router
-- Lucide Icons
+ To prioritize functionality of the app, I am replicating Todoist's user interface instead of creating my own custom design. I really like their sleek aesthetic and the idea of creating/styling a Todoist UI clone has been in my plans for a while. 
 
-Backend 
-- Express
-- JavaScript
+##### Tech stack
 
-#####  Features
-- [ ] Fully responsive
+`Frontend` : React + Vite, TypeScript, TailwindCSS
+`Backend` : Node, Express
+`Database`: MySQL, PlanetScale
+`Deployment`: Docker, AWS
+
+#####  Progress
+
+Desktop Screens
+
+![Desktop](./docs/desktopProgress.jpg)
+
+Tablet, Mobile Screens
+
+![Mobile](./docs/ipadIphoneProgress.jpg)
