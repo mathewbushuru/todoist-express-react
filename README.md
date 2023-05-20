@@ -20,8 +20,13 @@
 ##### Tech stack
 
 `Frontend` : React + Vite, TypeScript, TailwindCSS
+
 `Backend` : Node, Express
+
 `Database`: MySQL, PlanetScale
+
+`Testing`: Vitest
+
 `Deployment`: Docker, AWS
 
 #####  Progress
