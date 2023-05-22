@@ -8,7 +8,7 @@ const navItems = ["Features", "Templates", "For Teams", "Resources", "Pricing"];
 
 const Navbar: FC = ({}) => {
   return (
-    <div className="flex items-center justify-between border-b p-4 lg:px-8 xl:px-16 lg:border-b-0">
+    <div className="fixed left-0 right-0 top-0 flex items-center justify-between border-b bg-background p-4 lg:border-b-0 lg:px-8  xl:px-16">
       <Logo />
       <MenuIcon className="lg:hidden" />
       <div className="hidden lg:flex lg:items-center xl:gap-3">
@@ -16,16 +16,19 @@ const Navbar: FC = ({}) => {
           <Button
             variant="ghost"
             key={item}
-            className="xl:text-lg font-normal tracking-wide"
+            className="font-normal tracking-wide xl:text-lg"
           >
             {item}
           </Button>
         ))}
-        <div className="w-[1.5px] h-full bg-secondary">&nbsp;</div>
-        <Button variant="ghost" className="xl:text-lg font-normal tracking-wide">
+        <div className="h-full w-[1.5px] bg-secondary">&nbsp;</div>
+        <Button
+          variant="ghost"
+          className="font-normal tracking-wide xl:text-lg"
+        >
           Log in
         </Button>
-        <Button className="xl:text-lg font-normal tracking-wide">
+        <Button className="font-normal tracking-wide xl:text-lg">
           Start for free
         </Button>
       </div>
