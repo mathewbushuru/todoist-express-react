@@ -16,7 +16,7 @@ export default {
           DEFAULT: "#ffffff",
           foreground:"#232115"
         },
-        background: "#f8f8f8",
+        background: "#fefefe",
         foreground: "#1f1f1f",
         muted: "#575757",
         link: "#316fea",

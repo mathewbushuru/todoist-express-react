@@ -7,6 +7,8 @@ import CompanyGrid from "@/components/CompanyGrid";
 
 import heroImg from "/hero.avif";
 import dividerImg from "/divider.webp";
+import getMoreDoneImg from "/get-more-done.webp";
+import clearYourMindImg from "/clear-your-mind.webp";
 
 const HomePage: FC = ({}) => {
   return (
@@ -22,7 +24,7 @@ const HomePage: FC = ({}) => {
           Become focused, organized, and calm with Todoist. The world's #1 task
           manager and to-do list app.
         </div>
-        <Button className="mb-2 mt-2 sm:mb-0 sm:mt-4 sm:h-12">
+        <Button className="mb-2 mt-2 font-normal tracking-wide sm:mb-0 sm:mt-4 sm:h-12 xl:text-lg">
           Start for free
         </Button>
         <img src={heroImg} alt="hero image" className="lg:max-w-5xl" />
@@ -30,7 +32,7 @@ const HomePage: FC = ({}) => {
 
       {/* Used by  */}
       <div>
-        <img src={dividerImg} alt="#"  />
+        <img src={dividerImg} alt="#" />
         <div className="flex flex-col items-center gap-12 bg-[url('/bg-bottom.webp')] bg-cover bg-center bg-no-repeat py-8 pb-24 sm:flex-row sm:justify-center sm:gap-28">
           <div className="flex flex-col items-center gap-4 sm:items-start sm:gap-6">
             <div className="text-sm uppercase sm:text-base">
@@ -48,13 +50,52 @@ const HomePage: FC = ({}) => {
             </div>
           </div>
 
-          <div >
-            <div className="text-sm uppercase text-center sm:text-base">
+          <div>
+            <div className="text-center text-sm uppercase sm:text-base">
               Used by individuals and teams at
             </div>
             <CompanyGrid />
           </div>
         </div>
+      </div>
+
+      {/* 1st Features section  */}
+      <div className="flex flex-col items-center gap-12 p-8 sm:flex-row sm:justify-center lg:gap-24">
+        <div className="text-center sm:max-w-sm sm:text-left lg:max-w-md lg:p-12">
+          <div className="my-1 text-sm sm:text-base">Get more done</div>
+          {[
+            "Add your tasks.",
+            "Organize your life.",
+            "Achieve more every day.",
+          ].map((value, index) => {
+            return (
+              <div key={index} className="text-2xl font-semibold sm:text-3xl">
+                {value}
+              </div>
+            );
+          })}
+          <div className="py-4 font-light tracking-wide text-muted sm:text-lg">
+            Add tasks like “Read work emails every day at 10am” to fill your
+            to-do list in seconds using Todoist’s powerful natural language
+            recognition and recurring dates.
+          </div>
+        </div>
+        <img src={getMoreDoneImg} alt="#" className="max-w-xs lg:max-w-xl" />
+      </div>
+
+      {/* 2nd Features section  */}
+      <div className="flex flex-col items-center gap-12 p-8 sm:flex-row-reverse sm:justify-center lg:gap-24">
+        <div className="text-center sm:max-w-sm sm:text-left lg:max-w-md">
+          <div className="my-1 text-sm sm:text-base">Clear your mind</div>
+          <div className="text-2xl font-semibold sm:text-3xl">
+            Reach the mental clarity you've been longing for.
+          </div>
+          <div className="py-4 font-light tracking-wide text-muted sm:text-lg">
+            Your to-do lists are automatically sorted into Today, Upcoming and
+            custom Filter views to help you focus on your most important things.
+          </div>
+        </div>
+        <img src={clearYourMindImg} alt="#" className="max-w-xs lg:max-w-xl" />
       </div>
     </main>
   );
