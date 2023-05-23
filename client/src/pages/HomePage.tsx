@@ -24,7 +24,7 @@ const HomePage: FC = ({}) => {
           Become focused, organized, and calm with Todoist. The world's #1 task
           manager and to-do list app.
         </div>
-        <Button className="mb-2 mt-2 font-normal tracking-wide sm:mb-0 sm:mt-4 sm:h-12 xl:text-lg">
+        <Button className="mb-2 mt-2 font-normal tracking-wide sm:mb-0 sm:mt-4 sm:h-12 ">
           Start for free
         </Button>
         <img src={heroImg} alt="hero image" className="lg:max-w-5xl" />

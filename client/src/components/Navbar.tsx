@@ -16,7 +16,7 @@ const Navbar: FC = ({}) => {
           <Button
             variant="ghost"
             key={item}
-            className="font-normal tracking-wide xl:text-[16px] "
+            className="font-normal tracking-wide "
           >
             {item}
           </Button>
@@ -24,11 +24,11 @@ const Navbar: FC = ({}) => {
         <div className="h-full w-[1.5px] bg-secondary">&nbsp;</div>
         <Button
           variant="ghost"
-          className="font-normal tracking-wide xl:text-[16px]"
+          className="font-normal tracking-wide  "
         >
           Log in
         </Button>
-        <Button className="font-normal tracking-wide xl:text-[16px]">
+        <Button className="font-normal tracking-wide ">
           Start for free
         </Button>
       </div>
