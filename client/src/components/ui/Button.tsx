@@ -10,8 +10,8 @@ export const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:opacity-90",
         ghost: "text-popover-foreground hover:bg-secondary",
-        secondary: "text-link font-normal hover:underline hover:underline-offset-4",
-        link: "",
+        link: "text-link font-normal hover:underline hover:underline-offset-4",
+        secondary: "",
       },
       size: {
         default: "py-2 px-4 h-10",
