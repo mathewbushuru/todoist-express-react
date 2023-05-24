@@ -3,7 +3,7 @@ import { StarIcon } from "lucide-react";
 
 import Navbar from "@/components/Navbar";
 import Button from "@/components/ui/Button";
-import CompanyGrid from "@/components/CompanyGrid";
+import CompanyGrid from "@/assets/CompanyGrid";
 
 import heroImg from "/hero.avif";
 import dividerImg from "/divider.webp";
