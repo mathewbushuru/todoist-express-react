@@ -30,7 +30,7 @@ const HomePage: FC = ({}) => {
         <img src={heroImg} alt="hero image" className="lg:max-w-5xl" />
       </div>
 
-      {/* Used by  */}
+      {/* Used by section */}
       <div>
         <img src={dividerImg} alt="#" />
         <div className="flex flex-col items-center gap-12 bg-[url('/bg-bottom.webp')] bg-cover bg-center bg-no-repeat py-8 pb-24 sm:flex-row sm:justify-center sm:gap-28">
@@ -96,6 +96,17 @@ const HomePage: FC = ({}) => {
           </div>
         </div>
         <img src={clearYourMindImg} alt="#" className="max-w-xs lg:max-w-xl" />
+      </div>
+
+      {/* Links section  */}
+      <div className="p-10 text-center sm:p-28 sm:tracking-wide lg:max-w-5xl lg:text-left">
+        <div className="text-2xl font-semibold sm:text-3xl">
+          Delightfully simple and deceptively powerful task management
+        </div>
+        <div className="py-2 text-lg font-normal text-muted sm:text-xl lg:max-w-2xl">
+          30 million+ people organize billions of tasks in Todoist for their
+          work, education and personal life.
+        </div>
       </div>
     </main>
   );
