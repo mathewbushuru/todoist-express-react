@@ -21,7 +21,7 @@ const HomePage: FC = ({}) => {
       <Navbar />
 
       {/* Hero section  */}
-      <div className="flex flex-col items-center gap-4 pt-36 text-center sm:pt-44 lg:pt-52">
+      <div className="mx-auto flex flex-col items-center gap-4 pt-36 text-center sm:pt-44 lg:pt-52 xl:max-w-7xl">
         <h1 className="max-w-xs px-4 text-4xl font-semibold sm:max-w-lg sm:px-0 sm:text-5xl sm:font-bold sm:leading-tight sm:tracking-wide lg:max-w-xl lg:text-6xl lg:leading-tight ">
           Organize your work and life, finally.
         </h1>
@@ -104,7 +104,7 @@ const HomePage: FC = ({}) => {
       </div>
 
       {/* Links section intro */}
-      <div className="p-10 text-center sm:px-28 sm:tracking-wide lg:max-w-5xl lg:text-left">
+      <div className="mx-auto p-10 text-center sm:px-28 sm:tracking-wide lg:max-w-5xl lg:text-left xl:max-w-7xl">
         <div className="text-2xl font-semibold sm:text-3xl">
           Delightfully simple and deceptively powerful task management
         </div>
@@ -115,7 +115,7 @@ const HomePage: FC = ({}) => {
       </div>
 
       {/* Links grid  */}
-      <div className="grid grid-cols-1 gap-y-8 px-10 sm:grid-cols-2 sm:gap-x-8 sm:px-16 lg:px-28">
+      <div className="mx-auto grid grid-cols-1 gap-y-8 px-10 sm:grid-cols-2 sm:gap-x-8 sm:px-16 lg:px-28 xl:max-w-7xl">
         <div className="flex flex-col items-center gap-2 text-center lg:max-w-lg lg:items-start lg:text-left">
           <img
             src={withYouEverywhereImg}
