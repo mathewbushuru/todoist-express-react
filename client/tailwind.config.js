@@ -20,6 +20,7 @@ export default {
         foreground: "#1f1f1f",
         muted: "#575757",
         link: "#316fea",
+        footer: "#fff9f3"
       },
     },
   },
