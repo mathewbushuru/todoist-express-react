@@ -2,11 +2,11 @@
   "name": "todoist-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start:prod": "node ./dist/index.js",
-    "start": "nodemon ./src/index.ts"
+    "start": "node ./dist/index.js",
+    "start:dev": "nodemon ./src/index.ts"
   },
   "keywords": [],
   "author": "",

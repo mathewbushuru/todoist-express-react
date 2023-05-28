@@ -7,7 +7,8 @@
 The app is a basic to-do list CRUD application that should have the following features:
 
  - [x] Todoist UI Clone (frontend)
- - [ ] Allow users to register and log in
+ - [x] Sign up and log in screens frontend
+ - [x] Authentication backend
  - [ ] Authenticated users can add, complete, uncomplete, modify, and delete tasks
  - [ ] Users can drag tasks to rearrange them
  - [ ] Users can add due dates to tasks
