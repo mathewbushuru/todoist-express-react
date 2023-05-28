@@ -1,13 +1,13 @@
 import express, { Request, Response, NextFunction } from "express";
 
+import authRouter from "./routes/user";
+
 const app = express();
 
 app.get("/", (req: Request, res: Response, next: NextFunction) => {
-  res.json({ hello: "Hello world" });
+  res.json({ hello: "Welcome to Todoist's API" });
 });
 
-app.post("/", (req: Request, res: Response, next: NextFunction) => {
-  res.json({ message: "Received a POST request" });
-});
+app.use("/auth", authRouter);
 
 export { app };
