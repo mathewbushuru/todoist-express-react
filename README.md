@@ -31,7 +31,7 @@ The app is a basic to-do list CRUD application that should have the following fe
 
 `Testing`: Vitest
 
-`Deployment`: Docker, AWS
+`Deployment`: Docker
 
 #####  Progress so far
 
