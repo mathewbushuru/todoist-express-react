@@ -1,7 +1,7 @@
 import { Request } from "express";
 
 // export interface SignupRequestType extends Request {}
-export interface SignupRequestType {
+export interface AuthDataType {
   email: string;
   password: string;
 }
