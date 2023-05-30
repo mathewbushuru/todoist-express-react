@@ -12,7 +12,6 @@ app.use(bodyParser.json())
 app.get("/", (req: Request, res: Response, next: NextFunction) => {
   res.json({ hello: "Welcome to Todoist's API" });
 });
-
 app.use("/auth", authRouter);
 
 export default app

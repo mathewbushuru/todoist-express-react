@@ -1,5 +1,7 @@
 import { Request, Response } from "express";
 
+import User from "../models/user";
+
 import { AuthDataType } from "./auth.d";
 
 export const signupController = (req: Request, res: Response) => {
@@ -17,9 +19,12 @@ export const signupController = (req: Request, res: Response) => {
     return res.status(500).json({ errorMessage });
   }
 
+  const newUser = new User(reqData.email, reqData.password);
+  // TODO: Store new user in database
+
   console.log("Sign up successful");
 
-  res.status(201).json({ message: "Signed up", ...reqData });
+  res.status(201).json({ message: "Signed up", user: newUser });
 };
 
 export const loginController = (req: Request, res: Response) => {
